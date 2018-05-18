@@ -6,7 +6,7 @@ ENV VERSION=3.8
 
 # Alpine-based installation
 # #########################
-RUN pip install --upgrade --no-cache-dir pip setuptools python-openstackclient==$VERSION
+RUN pip install --upgrade --no-cache-dir pip setuptools python-openstackclient==$VERSION python-swiftclient
 
 # Add a volume so that a host filesystem can be mounted
 # Ex. `docker run -v $PWD:/data jmcvea/openstack-client`
